@@ -1,38 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 - Page Title - Melvin Alvarez</title>
-  <meta name="description" content="Page description for SEO and audit requirements.">
+  <title>WDD 231 - Home - Melvin Alvarez</title>
+  <meta name="description" content="WDD 231 Course Portal and Chamber of Commerce Project Site Plan by Melvin Alvarez.">
   <meta name="author" content="Melvin David Alvarez Fernandez">
-  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles-large.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
 </head>
 <body>
   <header>
-    <span id="course-title">Course Title</span>
-    <nav>
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 4</a>
+    <img src="images/programmingdesktop.svg" alt="Site Logo" width="40" height="40" class="header-logo">
+    <div class="logo-box">
+      <span>WDD 231 Web Frontend Development I</span>
+    </div>
+    <button id="menu" aria-label="Toggle Navigation"></button>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="chamber/index.html">Chamber Project</a>
+      <a href="final-project/index.html">Final Project</a>
     </nav>
   </header>
 
   <main>
-    <h1>Main Page Heading</h1>
-    
+    <h1>Home</h1>
+    <div class="profile-grid">
+      <section class="card about-card">
+        <h2>About Me</h2>
+        <p>
+          Welcome to my WDD 231 course portal! I am a full-stack web development student passionate about building efficient backend architectures, clean automation systems, and responsive user experiences.
+        </p>
+      </section>
+
+      <section class="card photo-card">
+        <h2>Student Photo</h2>
+        <img src="images/profile.jpg" alt="Melvin Alvarez Profile Picture" width="300" height="300">
+      </section>
+    </div>
+
+    <section class="card courses-card">
+      <h2>Web Certificate Courses</h2>
+      
+      <div class="filter-buttons">
+        <button id="all-btn" class="active-filter">All</button>
+        <button id="cse-btn">CSE</button>
+        <button id="wdd-btn">WDD</button>
+      </div>
+
+      <div id="courses-container" class="courses-grid">
+      </div>
+      <p id="total-credits" class="credits-info"></p>
+    </section>
   </main>
 
   <footer>
+    <div class="social-links">
+      <a href="https://linkedin.com/in/melnekoman" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+        <img src="images/linkedin.webp" alt="LinkedIn" width="24" height="24">
+      </a>
+      <a href="https://github.com/melnekoman" target="_blank" rel="noopener" aria-label="GitHub Profile">
+        <img src="images/github.svg" alt="GitHub" width="24" height="24">
+      </a>
+      <a href="https://x.com/melnekoman" target="_blank" rel="noopener" aria-label="X Profile">
+        <img src="images/xlogo.webp" alt="X" width="24" height="24">
+      </a>
+    </div>
     <p>
-      &copy;<span id="currentyear"></span> | Melvin D. Alvarez F. | Venezuela
+      &copy;<span id="currentyear"></span> | Melvin D. Alvarez F. | Caracas, Venezuela
     </p>
     <p id="lastModified"></p>
   </footer>

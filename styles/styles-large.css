@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: var(--nav-bg-color);
+        margin-top: 1.5rem;
+        box-shadow: none;
+    }
+
+    .nav a {
+        border-bottom: none;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .header-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-box {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .profile-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
