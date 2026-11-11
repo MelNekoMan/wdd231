@@ -26,6 +26,10 @@ h1, h2, h3 {
   font-family: var(--heading-font);
 }
 
+.site-title {
+  font-size: 1.5rem;
+}
+
 header {
   background-color: var(--accent-color);
   color: var(--primary-color);
