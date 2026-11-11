@@ -1,0 +1,246 @@
+:root {
+  --primary-color: #0b3c5d;
+  --secondary-color: #328cc1;
+  --accent-color: #c5e7f2;
+  --background-color: #f7f9fa;
+  --card-background: #ffffff;
+  --text-color: #1d2731;
+  --border-color: #d1d5db;
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+}
+
+header {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-logo h1 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+#hamburger-menu {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#hamburger-menu::before {
+  content: "☰";
+}
+
+#hamburger-menu.open::before {
+  content: "❌";
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--primary-color);
+  margin-top: 0.75rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+nav li a {
+  display: block;
+  color: var(--card-background);
+  text-decoration: none;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav li a.active, 
+nav li a:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+}
+
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.view-toggle button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid var(--primary-color);
+  background-color: var(--card-background);
+  color: var(--primary-color);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.view-toggle button.active-view {
+  background-color: var(--primary-color);
+  color: var(--card-background);
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.grid-layout .member-card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-layout .member-header {
+  width: 100%;
+  background-color: var(--accent-color);
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.grid-layout .member-header h3 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.grid-layout .member-header p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.grid-layout .member-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.grid-layout .member-body img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.grid-layout .member-details {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.list-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list-layout .member-card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+}
+
+.list-layout .member-card img, 
+.list-layout .member-header p {
+  display: none;
+}
+
+.list-layout .member-header h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+footer {
+  min-height: 120px;
+  background-color: var(--primary-color);
+  color: var(--card-background);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-social img {
+  width: 48px;
+  height: 48px;
+}

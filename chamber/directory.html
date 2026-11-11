@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caracas Chamber of Commerce - Directory | Caracas, Venezuela</title>
+  <meta name="description" content="Member directory of the Caracas Chamber of Commerce listing local businesses and organizations.">
+  <meta name="author" content="Melvin David Alvarez Fernandez">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles-large.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.webp">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/members.js" defer></script>
+  <meta property="og:title" content="Caracas Chamber of Commerce Directory">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://melnekoman.github.io/wdd231/images/caracas-og.jpg">
+  <meta property="og:url" content="https://melnekoman.github.io/wdd231/directory.html">
+  <meta property="og:description" content="Explore and connect with certified businesses registered with the Caracas Chamber of Commerce.">
+</head>
+<body>
+  <header>
+    <div class="header-logo">
+      <img src="images/favicon.webp" alt="Caracas Chamber Logo" width="50" height="50">
+      <h1>Caracas Chamber of Commerce</h1>
+    </div>
+    <div class="header-controls">
+      <button id="hamburger-menu" aria-label="Toggle Navigation Menu"></button>
+    </div>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Directory</h2>
+    
+    <div class="view-toggle">
+      <button id="grid-view" class="active-view">Grid</button>
+      <button id="list-view">List</button>
+    </div>
+
+    <div id="members-container" class="grid-layout"></div>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <h3>Caracas Chamber of Commerce</h3>
+      <p>Av. Andrés Eloy Blanco, Edif. Cámara de Comercio</p>
+      <p>Los Caobos, Caracas 1050, Venezuela</p>
+      <p>info@caracaschamber.org</p>
+      <p>+58 (212) 571-3222</p>
+    </div>
+    <div class="footer-social">
+      <a href="https://melnekoman.github.io/wdd231" target="_blank" aria-label="GitHub"><img src="images/github.svg" alt="GitHub"></a>
+      <a href="https://x.com/melnekoman" target="_blank" aria-label="X"><img src="images/xlogo.webp" alt="Twitter/X"></a>
+      <a href="https://www.linkedin.com/in/melnekoman" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+    </div>
+    <div class="footer-meta">
+      <p>WDD 231 Web Frontend Development I</p>
+      <p>
+      &copy;<span id="currentyear"></span> | Melvin D. Alvarez F. | Caracas, Venezuela
+      </p>
+    <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

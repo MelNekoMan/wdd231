@@ -1,0 +1,92 @@
+[
+  {
+  "name": "Banco Central de Venezuela",
+  "address": "Esquinas de Altagracia a Candelaria, Avenida Urdaneta, Caracas",
+  "phone": "+58 (212) 801-5111",
+  "website": "https://www.bcv.org.ve",
+  "image": "members/bcv-logo.webp",
+  "membership": "Platinum",
+  "tagline" : "El mayor valor eres tú",
+  "description": "An autonomous public institution responsible for formulating and implementing monetary policy and ensuring national economic stability."
+  },
+  {
+    "name": "Banesco Banco Universal",
+    "address": "Edificio Banesco, Colinas de Bello Monte, Caracas",
+    "phone": "+58 (212) 501-7000",
+    "website": "https://www.banesco.com",
+    "image": "members/banesco-logo.webp",
+    "membership": "Gold",
+    "tagline": "El camino siempre has sido tú",
+    "other": "Leading universal bank providing comprehensive financial services."
+  },
+  {
+    "name": "Farmatodo",
+    "address": "Av. Intercomunal de El Valle, Caracas",
+    "phone": "+58 (212) 600-6000",
+    "website": "https://www.farmatodo.com.ve",
+    "image": "members/farmatodo-logo.webp",
+    "membership": "Silver",
+    "tagline": "Qué bien estar contigo",
+    "other": "24/7 self-service pharmacy and retail chain."
+  },
+  {
+    "name": "Mercantil Banco",
+    "address": "Av. Andrés Bello, San Bernardino, Caracas",
+    "phone": "+58 (212) 503-1111",
+    "website": "https://www.bancomercantil.com",
+    "image": "members/mercantil-logo.webp",
+    "membership": "Gold",
+    "tagline": "Impulsa tu mundo",
+    "other": "One of the oldest and most established financial institutions in the country."
+  },
+  {
+    "name": "Digitel",
+    "address": "Torre Digitel, Urb. La Castellana, Caracas",
+    "phone": "+58 (212) 263-1111",
+    "website": "https://www.digitel.com.ve",
+    "image": "members/digitel-logo.webp",
+    "membership": "Silver",
+    "tagline": "El mundo se hizo digital, y lo digital es Digitel",
+    "other": "Innovative mobile telecommunications operator."
+  },
+  {
+    "name": "Movistar Venezuela",
+    "address": "Centro Comercial El Recreo, Sabana Grande, Caracas",
+    "phone": "+58 (212) 200-1111",
+    "website": "https://www.movistar.com.ve",
+    "image": "members/movistar-logo.webp",
+    "membership": "Silver",
+    "tagline": "Conecta con lo que te mueve",
+    "other": "Major telecommunications provider connecting millions of users."
+  },
+  {
+  "name": "C.A. Metro de Caracas",
+  "address": "Av. Principal de La Hoyada, Edif. Sede Administrativa, Caracas",
+  "phone": "+58 (212) 507-3311",
+  "website": "https://www.metrodecoracas.gob.ve",
+  "image": "members/metro-caracas-logo.webp",
+  "membership": "Gold",
+  "tagline" : "Por amor al Metro",
+  "description": "An underground and surface mass transit system that coordinates urban mobility in the Caracas Metropolitan Area."
+  },
+  {
+  "name": "Banco de Venezuela S.A.",
+  "address": "Av. Universidad, Esquina de Lamas, Torre Banco de Venezuela, Caracas",
+  "phone": "+58 (212) 409-2000",
+  "website": "https://www.bancodevenezuela.com",
+  "image": "members/bdv-logo.webp",
+  "membership": "Platinum",
+  "tagline" : "El mayor valor eres tú",
+  "description": "The country's leading bank, offering comprehensive financial services to the commercial, corporate, and public sectors."
+  },
+  {
+    "name": "Empresas Polar",
+    "address": "Av. Principal de Los Cortijos, Caracas",
+    "phone": "+58 (212) 203-3111",
+    "website": "https://www.empresaspolar.com",
+    "image": "members/polar-logo.webp",
+    "membership": "Gold",
+    "tagline": "Persigue tus sueños, descubre hasta dónde puedes llegar",
+    "other": "Founded in 1941, the largest private industrial corporation in Venezuela."
+  }
+]
