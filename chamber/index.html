@@ -15,6 +15,7 @@
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
   <meta property="og:title" content="Caracas Chamber of Commerce - Home">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://melnekoman.github.io/wdd231/chamber/images/caracas-og.jpg">
@@ -52,7 +53,7 @@
       <div class="weather-card">
         <h2>Current Weather</h2>
         <div class="weather-main-info">
-          <p class="weather-temp-desc"><span id="current-temp"></span> - <span id="weather-desc"></span></p>
+          <p class="weather-temp-desc"><span id="current-temp"></span> <span id="weather-desc"></span></p>
           
           <div class="weather-row">
             <div class="weather-details">
@@ -70,6 +71,11 @@
       </div>
 
       <a href="join.html" class="cta-button">Join the Chamber</a>
+    </section>
+
+    <section class="spotlights-section">
+      <h2>Member Spotlights</h2>
+      <div id="spotlights"></div>
     </section>
   </main>
 
