@@ -260,6 +260,89 @@ main h2 {
   display: block;
 }
 
+.hero .weather-card {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  right: 0.75rem;
+  background: rgba(11, 60, 93, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: var(--card-background);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero .weather-card h2 {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.2rem;
+  color: var(--accent-color);
+}
+
+.weather-main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.weather-temp-desc {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.weather-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.weather-details p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+#weather-icon {
+  width: 120px;
+  height: 50px;
+  margin: 0;
+}
+
+.forecast h3 {
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 0.25rem;
+  color: var(--accent-color);
+}
+
+#forecast-container p {
+  font-size: 1rem;
+  margin: 0.10rem 0;
+}
+
+.hero .cta-button {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
 .cta-button {
   position: absolute;
   bottom: 2rem;

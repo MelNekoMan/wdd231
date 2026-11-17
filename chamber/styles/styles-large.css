@@ -46,6 +46,7 @@
 }
 
   .hero {
+    position: relative;
     width: 100%;
     max-width: 100%;
     margin: 2rem auto;
@@ -65,14 +66,15 @@
     position: absolute;
     top: 2rem;
     left: 2rem;
-    background: rgba(11, 60, 93, 0.55);
+    right: auto;
+    background: rgba(11, 60, 93, 0.4);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 1.25rem;
     color: var(--card-background);
-    max-width: 320px;
+    width: 320px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   }
 
