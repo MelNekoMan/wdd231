@@ -39,9 +39,11 @@
   }
 
   nav li a.active, nav li a:hover {
-    background-color: var(--accent-color);
-    color: var(--text-color);
-  }
+    background-color: var(--secondary-color);
+    color: var(--card-background);
+    margin: 0.25rem 0.75rem;
+    border-radius: 6px;
+}
 
   .hero {
     width: 100%;

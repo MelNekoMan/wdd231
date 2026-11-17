@@ -55,8 +55,8 @@ header {
 }
 
 #hamburger-menu {
-  background: none;
-  border: none;
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
   color: var(--primary-color);
   font-size: 1.5rem;
   cursor: pointer;
@@ -64,6 +64,13 @@ header {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#hamburger-menu:hover {
+  background-color: var(--accent-color);
 }
 
 #hamburger-menu::before {
@@ -108,8 +115,10 @@ nav li a {
 
 nav li a.active, 
 nav li a:hover {
-  background-color: var(--accent-color);
-  color: var(--text-color);
+  background-color: var(--secondary-color);
+  color: var(--card-background);
+  margin: 0.25rem 0.75rem;
+  border-radius: 6px;
 }
 
 main {
@@ -128,6 +137,7 @@ main h2 {
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 
 .view-toggle button {
