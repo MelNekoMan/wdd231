@@ -39,8 +39,8 @@
   }
 
   nav li a.active, nav li a:hover {
-    background-color: var(--secondary-color);
-    color: var(--card-background);
+    background-color: var(--card-background);
+    color: var(--primary-color);
     margin: 0.25rem 0.75rem;
     border-radius: 6px;
 }
