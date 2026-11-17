@@ -48,28 +48,27 @@
         <source media="(max-width: 768px)" srcset="images/hero-mobile.webp">
         <img src="images/hero-desktop.webp" alt="Panoramic view of Caracas city" width="1600" height="720" loading="eager" fetchpriority="high">
       </picture>
-      
+
+      <div class="weather-card">
+        <h2>Current Weather</h2>
+        <div class="weather-content">
+          <img id="weather-icon" src="" alt="" width="64" height="64">
+          <div class="weather-details">
+            <p><span id="current-temp"></span></p>
+            <p id="weather-desc"></p>
+            <p>High: <span id="high-temp"></span></p>
+            <p>Low: <span id="low-temp"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+          </div>
+        </div>
+        <div class="forecast">
+          <h3>3-Day Forecast</h3>
+          <div id="forecast-container"></div>
+        </div>
+      </div>
+
       <a href="join.html" class="cta-button">Join the Chamber</a>
     </section>
-
-  <section class="weather-card">
-  <h2>Current Weather</h2>
-  <div class="weather-content">
-    <img id="weather-icon" src="" alt="" width="64" height="64">
-    <div class="weather-details">
-      <p><span id="current-temp"></span></p>
-      <p id="weather-desc"></p>
-      <p>High: <span id="high-temp"></span></p>
-      <p>Low: <span id="low-temp"></span></p>
-      <p>Humidity: <span id="humidity"></span></p>
-    </div>
-  </div>
-  <div class="forecast">
-    <h3>3-Day Forecast</h3>
-    <div id="forecast-container"></div>
-  </div>
-</section>
-
   </main>
 
   <footer>

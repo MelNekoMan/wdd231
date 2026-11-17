@@ -60,6 +60,54 @@
     object-fit: cover;
     max-height: 75vh;
   }
+
+  .hero .weather-card {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background: rgba(11, 60, 93, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 1.25rem;
+    color: var(--card-background);
+    max-width: 320px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero .weather-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.3rem;
+    color: var(--accent-color);
+  }
+
+  .weather-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .weather-details p {
+    margin: 0.15rem 0;
+    font-size: 0.9rem;
+  }
+
+  #current-temp {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .hero .cta-button {
+    bottom: 3rem;
+    right: 3rem;
+    left: auto;
+    transform: none;
+    padding: 0.9rem 2rem;
+    font-size: 1.05rem;
+  }
   
   .cta-button {
     bottom: 3rem;
