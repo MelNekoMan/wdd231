@@ -345,14 +345,12 @@ main h2 {
   margin-bottom: 1.25rem;
 }
 
-/* Container holding the cards */
 #spotlights {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
-/* Individual Spotlight Card */
 .spotlight-card {
   background: var(--card-background);
   border: 1px solid rgba(0, 0, 0, 0.1);
