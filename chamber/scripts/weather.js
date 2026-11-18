@@ -1,4 +1,3 @@
-// Select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#weather-desc');
@@ -45,7 +44,7 @@ function displayResults(data) {
 
   weatherIcon.setAttribute('src', iconSrc);
   weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = desc;
+  captionDesc.textContent = ` - ${desc}`;
   highTemp.innerHTML = `${Math.round(data.main.temp_max)}&deg;C`;
   lowTemp.innerHTML = `${Math.round(data.main.temp_min)}&deg;C`;
   humidity.textContent = `${data.main.humidity}%`;
