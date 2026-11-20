@@ -1,15 +1,10 @@
 @media screen and (min-width: 64em) {
-
   main {
     max-width: 100%;
-    margin: 0 auto;
     padding: 0 1.5rem;
   }
 
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1.5rem 2rem;
   }
 
@@ -19,7 +14,6 @@
 
   nav {
     display: block;
-    width: 100%;
     background-color: var(--primary-color);
   }
 
@@ -27,7 +21,6 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 0;
     padding: 0.75rem 0;
   }
 
@@ -35,10 +28,10 @@
     border-top: none;
     border-radius: 4px;
     padding: 0.5rem 1.25rem;
-    color: var(--card-background);
   }
 
-  nav li a.active, nav li a:hover {
+  nav li a.active,
+  nav li a:hover {
     background-color: var(--card-background);
     color: var(--primary-color);
     margin: 0.25rem 0.75rem;
@@ -46,34 +39,24 @@
   }
 
   .hero {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
     margin: 2rem auto;
     border-radius: 12px;
-    overflow: hidden;
     max-height: 75vh;
   }
-  
-  .hero picture, .hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+  .hero picture,
+  .hero img {
     max-height: 75vh;
   }
 
   .hero .weather-card {
-    position: absolute;
     top: 2rem;
     left: 2rem;
     right: auto;
-    background: rgba(11, 60, 93, 0.4);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 1.25rem;
-    color: var(--card-background);
     width: 320px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   }
@@ -81,15 +64,7 @@
   .hero .weather-card h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 0.3rem;
-    color: var(--accent-color);
-  }
-
-  .weather-content {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
   }
 
   .weather-details p {
@@ -110,12 +85,6 @@
     padding: 0.9rem 2rem;
     font-size: 1.05rem;
   }
-  
-  .cta-button {
-    bottom: 3rem;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-  }
 
   .grid-layout {
     grid-template-columns: repeat(3, 1fr);
@@ -131,23 +100,25 @@
     align-items: center;
   }
 
-  .home-content-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-
-  .spotlights-section {
+  .spotlights-section,
+  .events-section {
     max-width: 1200px;
     margin: 3rem auto;
     padding: 0 1.5rem;
   }
 
-  .spotlights-section h2 {
+  .spotlights-section h2,
+  .events-section h2 {
     font-size: 1.8rem;
+  }
+
+  .spotlights-section h2 {
     margin-bottom: 2rem;
   }
 
+  .events-section h2 {
+    margin-bottom: 1.75rem;
+  }
 
   #spotlights {
     display: grid;
@@ -156,26 +127,28 @@
   }
 
   .spotlight-card {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     text-align: left;
     padding: 1.5rem;
   }
 
   .spotlight-info {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
+    flex-grow: 1;
+  }
 
-.spotlight-info a {
-  margin-top: auto;
-}
+  .spotlight-info a {
+    margin-top: auto;
+  }
 
   .spotlight-card img {
     width: 100px;
     height: 100px;
+  }
+
+  .events-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
   footer {
