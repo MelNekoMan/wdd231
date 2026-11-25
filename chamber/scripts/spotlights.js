@@ -19,9 +19,9 @@ async function getSpotlightMembers() {
 
 function displaySpotlights(members) {
   const qualifiedMembers = members.filter(member => 
-    member.membership === 'Gold' || 
+    member.membership === 'Bronze' || 
     member.membership === 'Silver' || 
-    member.membership === 'Platinum'
+    member.membership === 'Gold'
   );
 
   const shuffled = qualifiedMembers.sort(() => 0.5 - Math.random());

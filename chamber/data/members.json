@@ -5,7 +5,7 @@
   "phone": "+58 (212) 801-5111",
   "website": "https://www.bcv.org.ve",
   "image": "members/bcv-logo.webp",
-  "membership": "Platinum",
+  "membership": "Gold",
   "tagline" : "El mayor valor eres tú",
   "description": "An autonomous public institution responsible for formulating and implementing monetary policy and ensuring national economic stability."
   },
@@ -15,7 +15,7 @@
     "phone": "+58 (212) 501-7000",
     "website": "https://www.banesco.com",
     "image": "members/banesco-logo.webp",
-    "membership": "Gold",
+    "membership": "Silver",
     "tagline": "El camino siempre has sido tú",
     "other": "Leading universal bank providing comprehensive financial services."
   },
@@ -35,7 +35,7 @@
     "phone": "+58 (212) 503-1111",
     "website": "https://www.bancomercantil.com",
     "image": "members/mercantil-logo.webp",
-    "membership": "Gold",
+    "membership": "Silver",
     "tagline": "Impulsa tu mundo",
     "other": "One of the oldest and most established financial institutions in the country."
   },
@@ -45,7 +45,7 @@
     "phone": "+58 (212) 263-1111",
     "website": "https://www.digitel.com.ve",
     "image": "members/digitel-logo.webp",
-    "membership": "Silver",
+    "membership": "Bronze",
     "tagline": "El mundo se hizo digital, y lo digital es Digitel",
     "other": "Innovative mobile telecommunications operator."
   },
@@ -55,7 +55,7 @@
     "phone": "+58 (212) 200-1111",
     "website": "https://www.movistar.com.ve",
     "image": "members/movistar-logo.webp",
-    "membership": "Silver",
+    "membership": "Bronze",
     "tagline": "Conecta con lo que te mueve",
     "other": "Major telecommunications provider connecting millions of users."
   },
@@ -65,7 +65,7 @@
   "phone": "+58 (212) 507-3311",
   "website": "https://www.metrodecoracas.gob.ve",
   "image": "members/metro-caracas-logo.webp",
-  "membership": "Gold",
+  "membership": "Silver",
   "tagline" : "Por amor al Metro",
   "description": "An underground and surface mass transit system that coordinates urban mobility in the Caracas Metropolitan Area."
   },
@@ -75,7 +75,7 @@
   "phone": "+58 (212) 409-2000",
   "website": "https://www.bancodevenezuela.com",
   "image": "members/bdv-logo.webp",
-  "membership": "Platinum",
+  "membership": "Gold",
   "tagline" : "El mayor valor eres tú",
   "description": "The country's leading bank, offering comprehensive financial services to the commercial, corporate, and public sectors."
   },
