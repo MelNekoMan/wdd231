@@ -162,4 +162,11 @@
   .footer-social {
     align-items: center;
   }
+
+  .join-layout {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
 }
