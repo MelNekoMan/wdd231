@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Caracas Chamber of Commerce</title>
+  <meta name="description" content="Confirmation page for your membership application with the Caracas Chamber of Commerce.">
+  <meta name="author" content="Melvin David Alvarez Fernandez">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.webp">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+  <meta property="og:title" content="Caracas Chamber of Commerce - Thank You">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://melnekoman.github.io/wdd231/chamber/images/caracas-og.jpg">
+  <meta property="og:image:alt" content="Reference logo of the Caracas Chamber of Commerce">
+  <meta property="og:url" content="https://melnekoman.github.io/wdd231/chamber/thankyou.html">
+  <meta property="og:description" content="Confirmation page for your membership application with the Caracas Chamber of Commerce. Review the submitted details for your organization's registration.">
+</head>
+<body>
+  <header>
+    <div class="header-logo">
+      <img src="images/favicon.webp" alt="Caracas Chamber Logo" width="50" height="50">
+      <p class="site-title">Caracas Chamber of Commerce</p>
+    </div>
+    <div class="header-controls">
+      <button id="hamburger-menu" aria-label="Toggle Navigation Menu"></button>
+    </div>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="thankyou-box">
+      <h1>Thank You for Applying</h1>
+      <p>We have received your membership application for the Caracas Chamber of Commerce. Below is a summary of your submitted details:</p>
+      <dl class="submitted-details">
+        <div>
+          <dt>First Name</dt>
+          <dd id="out-first-name"></dd>
+        </div>
+        <div>
+          <dt>Last Name</dt>
+          <dd id="out-last-name"></dd>
+        </div>
+        <div>
+          <dt>Email Address</dt>
+          <dd id="out-email"></dd>
+        </div>
+        <div>
+          <dt>Mobile Phone</dt>
+          <dd id="out-phone"></dd>
+        </div>
+        <div>
+          <dt>Business / Organization</dt>
+          <dd id="out-organization"></dd>
+        </div>
+        <div>
+          <dt>Submitted Timestamp</dt>
+          <dd id="out-timestamp"></dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <h2>Caracas Chamber of Commerce</h2>
+      <p>Av. Andrés Eloy Blanco, Edif. Cámara de Comercio</p>
+      <p>Los Caobos, Caracas 1050, Venezuela</p>
+      <p>info@caracaschamber.org</p>
+      <p>+58 (212) 571-3222</p>
+    </div>
+    <div class="footer-social">
+      <a href="https://melnekoman.github.io/wdd231" target="_blank" aria-label="GitHub"><img src="images/github.svg" alt="GitHub"></a>
+      <a href="https://x.com/melnekoman" target="_blank" aria-label="X"><img src="images/xlogo.webp" alt="Twitter/X"></a>
+      <a href="https://www.linkedin.com/in/melnekoman" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+    </div>
+    <div class="footer-meta">
+      <p>WDD 231 Web Frontend Development I</p>
+      <p>
+      &copy;<span id="currentyear"></span> | Melvin D. Alvarez F. | Caracas, Venezuela
+      </p>
+    <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
