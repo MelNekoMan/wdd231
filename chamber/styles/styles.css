@@ -470,7 +470,6 @@ main h2 {
   white-space: nowrap;
 }
 
-/* Footer */
 footer {
   background-color: var(--primary-color);
   color: var(--card-background);
