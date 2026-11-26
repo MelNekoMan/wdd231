@@ -9,6 +9,13 @@
   --muted-text-color: #555555;
   --heading-font: 'Montserrat', sans-serif;
   --body-font: 'Roboto', sans-serif;
+  --confetti-red: #ff595e;
+  --confetti-yellow: #ffca3a;
+  --confetti-green: #8ac926;
+  --confetti-blue: #1982c4;
+  --confetti-purple: #6a4c93;
+  --confetti-duration: 4s;
+  --confetti-z: 50;
 }
 
 * {
@@ -177,7 +184,8 @@ main h2 {
   margin-bottom: 1rem;
 }
 
-.grid-layout .member-header h3 {
+.grid-layout .member-header h3,
+.list-layout .member-header h3 {
   color: var(--primary-color);
 }
 
@@ -229,7 +237,6 @@ main h2 {
 .list-layout .member-header h3 {
   margin-bottom: 0.25rem;
   font-size: 1.1rem;
-  color: var(--primary-color);
 }
 
 .hero {
@@ -299,9 +306,6 @@ main h2 {
 .weather-details p,
 #forecast-container p {
   font-size: 1rem;
-}
-
-.weather-details p {
   opacity: 0.95;
 }
 
@@ -336,7 +340,6 @@ main h2 {
   margin-bottom: 1.25rem;
 }
 
-#spotlights,
 .events-list {
   display: flex;
   flex-direction: column;
@@ -344,18 +347,16 @@ main h2 {
 }
 
 #spotlights {
+  display: flex;
+  flex-direction: column;
   gap: 1.25rem;
 }
 
-.spotlight-card,
-.event-card {
+.spotlight-card {
   background: var(--card-background);
   border-radius: 10px;
   padding: 1.25rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.spotlight-card {
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -388,12 +389,8 @@ main h2 {
 
 .spotlight-info h3,
 .event-card h3 {
-  font-size: 1.05rem;
-  color: var(--primary-color);
-}
-
-.spotlight-info h3 {
   font-size: 1.1rem;
+  color: var(--primary-color);
 }
 
 .membership-badge {
@@ -427,6 +424,8 @@ main h2 {
 }
 
 .event-card {
+  background: var(--card-background);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   border-left: 4px solid var(--accent-color);
   border-radius: 8px;
   padding: 1.15rem 1.25rem;
@@ -449,10 +448,8 @@ main h2 {
 
 .cta-button {
   position: absolute;
-  bottom: 2rem;
   background-color: var(--primary-color);
   color: var(--card-background);
-  padding: 0.8rem 1.5rem;
   border-radius: 4px;
   font-weight: 600;
   text-decoration: none;
@@ -473,6 +470,7 @@ main h2 {
   white-space: nowrap;
 }
 
+/* Footer */
 footer {
   background-color: var(--primary-color);
   color: var(--card-background);
@@ -664,7 +662,7 @@ footer {
   padding: 1.5rem;
   margin: 1rem auto;
   max-width: 720px;
- text-align: center;
+  text-align: center;
 }
 
 .submitted-details {
@@ -684,4 +682,75 @@ footer {
 .submitted-details dd {
   margin-left: 0;
   font-size: 1rem;
+}
+
+@keyframes confettiDrop {
+  0% {
+    transform: translate(0, -10vh) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(20px, 50vh) rotate(360deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-16px, 105vh) rotate(720deg);
+    opacity: 0.15;
+  }
+}
+
+.confetti-container {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: var(--confetti-z);
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 18px;
+  border-radius: 2px;
+  background-color: var(--confetti-red);
+  animation: confettiDrop var(--confetti-duration) linear 0s infinite normal forwards;
+}
+
+.confetti--one {
+  left: 10%;
+  animation-duration: 3.5s;
+}
+
+.confetti--two {
+  left: 24%;
+  background-color: var(--confetti-yellow);
+  animation: confettiDrop 4.2s ease-in-out -1.2s infinite normal forwards;
+}
+
+.confetti--three {
+  left: 41%;
+  background-color: var(--confetti-green);
+  animation-duration: 3.8s;
+  animation-delay: -2.1s;
+}
+
+.confetti--four {
+  left: 58%;
+  background-color: var(--confetti-blue);
+  animation: confettiDrop 4.5s ease-in-out -0.6s infinite normal forwards;
+}
+
+.confetti--five {
+  left: 74%;
+  background-color: var(--confetti-purple);
+  animation-duration: 3.9s;
+  animation-delay: -1.7s;
+}
+
+.confetti--six {
+  left: 88%;
+  background-color: var(--confetti-yellow);
+  animation-duration: 4.1s;
+  animation-delay: -2.8s;
 }

@@ -1,9 +1,18 @@
 @media screen and (min-width: 64em) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
   main {
+    flex: 1 0 auto;
+    width: 100%;
     max-width: 100%;
     padding: 0 1.5rem;
   }
 
+  
   header {
     padding: 1.5rem 2rem;
   }
@@ -14,7 +23,7 @@
 
   nav {
     display: block;
-    background-color: var(--primary-color);
+    /*background-color: var(--primary-color);*/
   }
 
   nav ul {
@@ -41,9 +50,9 @@
   .hero {
     margin: 2rem auto;
     border-radius: 12px;
-    max-height: 75vh;
   }
 
+  .hero,
   .hero picture,
   .hero img {
     max-height: 75vh;
@@ -151,6 +160,13 @@
     gap: 1.5rem;
   }
 
+  .join-layout {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
   footer {
     flex-direction: row;
     justify-content: space-between;
@@ -161,12 +177,5 @@
 
   .footer-social {
     align-items: center;
-  }
-
-  .join-layout {
-    display: grid;
-    grid-template-columns: 1.35fr 1fr;
-    gap: 2rem;
-    align-items: start;
   }
 }
